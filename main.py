@@ -25,6 +25,6 @@ if __name__ == "__main__":
         {"_id": 21, "amount": 5},
     ]
 
-    # print(calculate_tab(table_1))
+    print(calculate_tab(table_1))
 
     # print(calculate_tab(table_2))

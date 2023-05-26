@@ -9,21 +9,8 @@ def calculate_tab(table):
             if j["_id"] == i["_id"]:
                 subtotal += j["price"] * i["amount"]
 
-    return f" subtotal: ${round(subtotal, 2)}"
+    format_total = f"${round(subtotal, 2)}"
 
+    dicitionary_response = {"subtotal": format_total}
 
-""" 
-def calculate_tab(table):
-    consomed_products = []
-
-    for i in table:
-        for j in products:
-            if j["_id"] == i["_id"]:
-                consomed_products.append(j)
-
-        for k in consomed_products:
-            amout = k["price"] * i["amount"]
-            # print(amout)
-
-    print(consomed_products)
- """
+    return dicitionary_response
